@@ -16,25 +16,11 @@ function generate_iframe() {
     const wrapper = document.getElementById("iframe_wrapper");
     wrapper.innerHTML = '';
 
-    for (let i = 0; i < number; i++) {
-        // const element = array[index];    
+    for (let i = 0; i < number; i++) {   
         const iframe_child = createIframe(URL, 320, 300)
         wrapper.appendChild(iframe_child)
         
     }
 
 }
-        // const BASEURL = 'https://www.youtube.com/embed/oItJut-ruRk';
-        // const LASTURL = '?autoplay=1&mute=1';
-        // const URL = document.getElementById('url');
-        // const button = document.getElementById('submitplay');
-        // const incrementCount = document.getElementById('totalNumber');
-        // const myframe = document.getElementById('myframe');
-        // button.addEventListener('click',()=>{
-        //     const inputVal = URL.value;
-        //     const totalNum = incrementCount.value;
-        //     // if(inputVal == "") return;
-        //     const dynamicSrc = `${BASEURL}${LASTURL}`;
-        //     myframe.src = dynamicSrc;
-        //     console.log(dynamicSrc,totalNum);
-        // })
+
